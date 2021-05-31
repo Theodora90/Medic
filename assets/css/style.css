@@ -1,0 +1,299 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+
+/* general styles */
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primaryColor: #fff;
+  --mainColor: #15a9a9;
+  --thickFonts: "Poppins", sans-serif;
+  --bodyText: "Montserrat", sans-serif;
+}
+
+.space-btw-1 {
+  line-height: 1.3;
+}
+.space-btw-2 {
+  line-height: 3.5;
+}
+
+.division {
+  width: 70%;
+}
+
+.img-border {
+  background: url("/assets/images/tired.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.image-border {
+  border: 2px solid var(--mainColor);
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  font-weight: 700;
+  font-family: var(--bodyText);
+}
+
+ul {
+  font-family: var(--bodyText);
+  font-weight: 700;
+}
+.main-text {
+  font-family: var(--thickFonts);
+}
+/* hero styles */
+.hero {
+  background-image: url("/assets/images/hero-one.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height: 88vh;
+}
+
+.hero-two {
+  background: url("/assets/images/hero-two.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  font-family: var(--bodyText);
+  color: var(--primaryColor);
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-three {
+  background: url("/assets/images/hero-three.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  font-family: var(--bodyText);
+  color: var(--primaryColor);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-three h1 {
+  font-family: var(--bodyText);
+  font-weight: 600;
+}
+
+/* call to action styles */
+.btn-cta-1 {
+  color: var(--mainColor);
+  background: var(--primaryColor);
+  font-family: var(--bodyText);
+  font-weight: bold;
+  font-size: 24px;
+  padding: 12px 30px;
+  border-radius: 20px;
+  transition: 2s ease-in;
+}
+
+.btn-cta-1:hover {
+  color: var(--primaryColor);
+  background: inherit;
+  border: 1px solid var(--primaryColor);
+  transition: 3s ease in;
+}
+
+.btn-cta-2 {
+  background: var(--mainColor);
+  color: var(--primaryColor);
+  font-family: var(--bodyText);
+  font-weight: bold;
+  font-size: 24px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: 2s ease-in;
+}
+
+.btn-cta-2:hover {
+  color: var(--mainColor);
+  background: inherit;
+  border: 1px solid var(--mainColor);
+  transition: 3s ease in;
+}
+
+.btn-cta-3 {
+  background: var(--mainColor);
+  color: var(--primaryColor);
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid var(--mainColor);
+  border-radius: 6px;
+  letter-spacing: 3.5px;
+}
+.btn-cta-3:hover {
+  background: inherit;
+  color: var(--primaryColor);
+  border: 2px solid var(--mainColor);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn-cta-4 {
+  background: inherit;
+  color: var(--primaryColor);
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 5px;
+  letter-spacing: 3.5px;
+}
+
+.btn-cta-4:hover {
+  background: var(--primaryColor);
+  color: var(--mainColor);
+  border: 2px solid var(--primaryColor);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.btn-back {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  background: var(--mainColor);
+  color: var(--primaryColor);
+  padding: 10px 55px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: 2s ease-in;
+}
+
+@media only screen and (max-width: 414px) {
+  .btn-back {
+    position: absolute;
+    right: 0;
+    top: 35%;
+  }
+}
+.btn-back:hover {
+  background: inherit;
+  border: 1px solid var(--mainColor);
+  color: var(--primaryColor);
+  padding: 5px 45px;
+  transition: 1s ease-in;
+}
+
+/* therapy section style */
+.therapy {
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 10px;
+}
+
+.therapy:hover {
+  margin: 65px 0px;
+}
+
+.therapy-1 {
+  border: 2px solid var(--mainColor);
+  color: var(--mainColor);
+}
+.therapy-1 a {
+  color: var(--mainColor);
+}
+
+.therapy-2 {
+  background: var(--mainColor);
+}
+
+/* about us section styles */
+.happy-img {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.about h4 {
+  font-family: var(--bodyText);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--mainColor);
+  margin: 40px 0 10px 0;
+}
+
+.about h3 {
+  font-family: var(--bodyText);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 35px;
+  margin: 30px 0 15px 0;
+}
+.about p {
+  color: rgba(115, 115, 115, 1);
+  font-size: 22px;
+  line-height: 2;
+  margin: 25px 0 40px 0;
+}
+.mission {
+  margin-top: 7%;
+  background: rgba(243, 243, 243, 1);
+}
+.mission h3 {
+  color: #000;
+}
+.mission h3 span {
+  color: var(--mainColor);
+}
+
+.get-app h3 {
+  font-family: var(--bodyText);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 35px;
+  color: var(--primaryColor);
+}
+.get-app p {
+  font-size: 22px;
+}
+
+/* music therapy */
+.music-theraphy {
+  background: rgba(243, 243, 243, 1);
+  font-family: var(--bodyText);
+}
+
+.music-theraphy p {
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.music-theraphy p,
+h3 {
+  color: rgba(142, 141, 141, 1);
+}
+/* footer styles */
+footer {
+  padding: 20px;
+  font-family: var(--bodyText);
+  font-weight: 500;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+footer span a {
+  text-align: center;
+  color: var(--mainColor);
+  font-size: 24px;
+  margin: 3%;
+}
